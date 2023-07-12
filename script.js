@@ -311,7 +311,6 @@ console.log( number1 > number2 )
 
 console.log( "a" > "f" ); // false => en estos casos JS va a comparar por su codigo numerico
 
-console.log( "a" > 100 ); 
 
 
 
@@ -454,6 +453,39 @@ switch( color ) {
     break;
   default:
     // cualquier otro caso posible
-    console.log("no conozco ese color :(")
+    console.log("no conozco ese color :(");
 
 }
+
+
+
+
+// LOOPS
+
+
+// syntaxis
+
+// for ( inicializacion del control, condicion a cumplir, expression final ) {
+//    el codigo  a ejecutar multiples veces
+// }
+
+
+for ( let patata = 0; patata < 10; patata = patata + 1 ) {
+
+  // let patata = 0 // UNA SOLA VEZ AL INICIO DEL BUCLE
+
+  // if (patata < 10) { continua el bucle }
+  // else { deten el bucle }
+
+  console.log("ejecutando un loop", patata)
+
+
+  // patata = patata + 1  
+
+}
+
+
+for ( let i = 20; i < 100; i += 2  ) {
+  console.log("bucle sencillo", i)
+}
+// i`++ => i = i + 1
