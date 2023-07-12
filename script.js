@@ -489,3 +489,52 @@ for ( let i = 20; i < 100; i += 2  ) {
   console.log("bucle sencillo", i)
 }
 // i`++ => i = i + 1
+
+
+
+
+// Ejercicio
+
+let string = "B?!*??!n!!*!n?!*?!? !w1!w??!k!o???o!!";
+
+let secretCode = "";
+
+// 1. cambiar todos los "*"" a "a"
+// 2. remover todos los "!" o "?"
+// 3. luego del " " termina la palabra secreta
+
+for ( let i = 0; i < string.length; i++) {
+  console.log(string[i])
+  let character = string[i]
+  
+  if (character === "*") {
+    character = "a"; 
+  } else if (character === "!" || character === "?") {
+    // character = "";
+    continue; // deten esta iteracion del bucle
+  } else if (character === " ") {
+    break; // deten por completo el bucle
+  }
+
+  secretCode = secretCode + character
+}
+
+// for (let i = 0; i < string.length; i++) {
+
+//   let character = string[i]
+
+//   if (character === "*" ) {
+//     secretCode = secretCode + "a";
+//   } else if (character === "!" || character === "?") {
+//     secretCode = secretCode + "";
+//   } else {
+//     secretCode = secretCode + character;
+//   }
+
+//   if (character === " ") {
+//     i = string.length
+//   }
+
+// }
+
+console.log(secretCode)
